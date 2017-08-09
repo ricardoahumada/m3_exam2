@@ -1,0 +1,6 @@
+#AUTENTICACIÓN 
+curl -H "Content-Type: application/json" -H "username: amador.lopez.1963@gmail.com" -H "password: md5_coded" -v -X GET  http://localhost:8080/Dehumo/rest/json/authenticate
+
+#Envio de token para acceder a zona restringida
+curl -H "Content-Type: application/json" -H "token: eyJraWQiOiIxIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJkZWh1bW8uY29tIiwiZXhwIjoxNDc2MjcwMDM2LCJqdGkiOiI0a2Q2eElGS0NUN1B4b0QyU2pXSVpBIiwiaWF0IjoxNDc2MjY5NDM2LCJuYmYiOjE0NzYyNjkzMTYsInN1YiI6ImFtYWRvci5sb3Blei4xOTYzQGdtYWlsLmNvbSIsInJvbGVzIjpbImNsaWVudCJdfQ.S72Z35FMDGSNY7Vx4vHTe7C1halrSZYFRQmoCUhWUypT1QYpkLESX9y8YL-K0S15BT3vflTvQMNgnWbgK4jTf-4hMYHplraR0dzgRfM1GuP4uMI36ePhICJbStGMEAWKuQ-n32CzMwN3OcmaLQFy8cJewo8w6BR0WsEE_2C1gXucYWbyOFtwjR5H9LrG5xoLkpi3HoIliD_73RhvRATSlx0EBu_w_zJFO9JErik86pz9ZWqHNkeBoagphfx4KodwHUX29maTiuU4LmyVkYgkzv8KXvvaHivOwhmL6zexAVnvUDMk-6Gu_C_aBajzibZjMsGf0l72veBiWsXDVRAk5A" -v -X GET http://localhost:8080/Dehumo/rest/json/privatedashboard
+

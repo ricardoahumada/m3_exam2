@@ -1,0 +1,29 @@
+1.
+@GET
+@Path("/almacenarMaquina")
+@Produces(MediaType.APPLICATION_JSON)
+public List<Maquina> listarMaquinas(Maquina maquina)
+http://localhost:8080/dehumo/rest/json/listarMaquinas
+
+2.
+@POST
+@Path("/almacenarMaquina")
+@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
+public Response almacenarMaquina(Maquina maquina):
+http://localhost:8080/dehumo/rest/json/almacenarMaquina
+
+3.
+@GET
+@Path("/listarMaquinas")
+@Produces(MediaType.APPLICATION_JSON)
+public List<Maquina> listarMaquinas(Maquina maquina)
+http://localhost:8080/dehumo/rest/json/listarMaquinas
+
+4.
+@GET
+@Path("/detalleMaquina/{id}")
+@Consumes(MediaType.TEXT_PLAIN)
+@Produces(MediaType.APPLICATION_JSON)
+public Maquina detalleMaquina(id)
+http://localhost:8080/dehumo/rest/json/detalleMaquina

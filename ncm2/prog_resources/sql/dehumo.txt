@@ -1,0 +1,52 @@
+
+Base de datos (mysql version: 6.3)
+====================================
+	+ Base de datos	-> dehumo
+	+ usuario		-> sqldehumo
+	+ password		-> dehumo
+	
+	Manage Server
+	============
+	Connection Name		: Local instance dehumo
+	Connection Method	: Standard(Tcp/Ip)
+	Parameters			:
+		Hostname		: localhost  		port		: 3306
+		Username		: sqldehumo 		password	: dehumo
+
+	Crear base de datos y usuario desde un fichero 
+	===============================================
+		+ Se debe hacer login en usuario con privilegios, en nuestro caso "root".
+		+ En la versión mysql  6.3
+		   > Pestaña server
+		  > Data importar
+		    >>  Import from Self-Contained File:   []dehumo_ini.sql		    --> [] carpeta donde esté el fichero
+			+ start import
+	
+	----------------------------------------------------------------------------------------------------------------
+	
+	Crear tablas en la base de datos
+	===============================================
+	A.- Entrar por usuario root (mysql version: 6.3)
+		+ Entrar en mysql con usuario root
+			Server -> import from file : dehumo_maquina.sql
+			start import
+			
+			Server -> import from file : dehumo_tabaco.sql			
+			start import
+
+			Server -> import from file : dehumo_clientes.sql			
+			start import	
+	
+	B.- Entrar en la base de datos (dehumo)
+		+ abrir una ventana de sql.
+		+ Abrir esquema y seleccionar todo el contenido del fichero.
+		+ Pegar el contenido del fichero y ejecutar instrucción sql.
+
+
+	
+	
+	C. - Refresh all
+		+ Tables	-> debe aparecer la tabla.
+
+	D.- Este proceso se debe repetir por cada tabla a crear.
+	
